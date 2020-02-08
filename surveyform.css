@@ -1,0 +1,27 @@
+#body {
+    margin:auto;
+    width: 400px;
+    float: left;
+  }
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-1 {
+    width: 20%;
+    float: left;
+    margin-top: 5px;
+  }
+  .col-2 {
+    width: 75%;
+    float: left;
+    margin-top: 5px;
+  }
+  textarea {
+    height: 100px;
+  }
+  input[type=submit] {
+    float: left;
+    background-color: #45a049;
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="surveyform.css">
+    <title>Survey Form</title>
+</head>
+<body>
+  <fieldset id="body">
+    <h1 id="title">Free Code Camp</h1>
+    <p id="description">Have an account</p>
+    <form id="survey-form">
+      <div class="rows">
+        <div class="col-1"><label for="name" id="name-label">User : </label></div>
+        <div class="col-2"><input type="text" id="name" name="name" placeholder="User Name"></div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-1"><label for="email" id="email-label">Email : </label></div>
+        <div class="col-2"><input type="text" id="email" name="email" placeholder="Email" pattern="^[a-zA-Z]([a-z0-9._%+-]{2,})+@[a-zA-Z0-9]+\.[a-z]{2,}$" required>
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-1"><label for="number" id="number-label">Age : </label></div>
+        <div class="col-2"><input type="number" id="number" name="number" placeholder="Age" min="18" max="90" pattern="/\d/g">
+        </div>
+      </div>
+      
+      <div class="rows">  
+        <div class="col-1"><legend for="number" id="number-label">Fav Pet</legend></div>
+        <div class="col-2">
+          <input type="radio" id="cat" name="rb"                value="cat">Cat
+          <input type="radio" id="dog" name="rb"
+                 value="dog">Dog
+          <input type="radio" id="bird" name="rb"
+                 value="bird">Bird
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-1"><legend for="number" id="number-label">School </legend></div>
+        <div class="col-2">
+          <input type="checkbox" id="highschool"
+                 value="highschool">High School<br>
+          <input type="checkbox" id="bachelor"
+                 value="bachelor">Bachelor Degree<br>
+          <input type="checkbox" id="master"
+                 value="master">Master Degree<br>
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-1"><label for="number" id="number-label">Country : </label></div>
+        <div id="col-2">
+          <select id="dropdown">
+            <option></option>
+        <option value="turkey">Turkey</option>
+        <option value="usa">USA</option>
+        <option value="england">England</option>
+        <option value="germany">Germany</option>
+        <option value="swedan">Swedan</option>
+        <option value="china">China</option>
+        <option value="rusia">Rusia</option>
+    </select>
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-1"><label for="textarea">Commit : </label></div>
+        <div class="col-2"><textarea type="textarea" id="textarea" name="textarea" placeholder="Write something..."></textarea>
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="col-2"><input type="submit" value="Submit"></div>
+      </div>
+    </form>
+    </fieldset>
+</body>
+</html>
